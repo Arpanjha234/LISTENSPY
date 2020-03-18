@@ -216,7 +216,7 @@ send_link=$(grep -o "https://[0-9a-z]*\.serveo.net" sendlink)
 
 
 sed 's+forwarding_link+'$send_link'+g' template.php > index.php
-sed 's+redirect_link+'$redirect_link'+g' js/_app.js > app.js
+sed 's+redirect_link+'$redirect_link'+g' app.js > app.js
 
 
 }
